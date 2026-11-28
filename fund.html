@@ -35,6 +35,9 @@
   th:first-child,td:first-child{text-align:left}
   tr:last-child td{border-bottom:none}
   .note{font-size:.85rem;color:var(--muted);margin-top:12px}
+  .up{color:var(--up);font-weight:700}
+  .down{color:var(--down);font-weight:700}
+  .flat{color:var(--muted);font-weight:700}
   .sector{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:center;margin-top:8px}
   .pie{width:216px;height:216px;border-radius:50%;flex:none;position:relative;
        background:conic-gradient(#8f76d6 0% 25.9%, #f3a6c8 25.9% 50.0%, #6fb3e0 50.0% 63.4%,
@@ -62,25 +65,25 @@
     <h2>運用成績</h2>
     <div class="stats">
       <div class="stat"><div class="label">基準取得額（運用スタート）</div><div class="value">544,171円</div></div>
-      <div class="stat"><div class="label">現在評価額（2026年11月27日時点）</div><div class="value">559,970円</div></div>
-      <div class="stat"><div class="label">損益</div><div class="value">+15,799円（+2.90%）</div></div>
+      <div class="stat"><div class="label">現在評価額（2026年11月28日時点）</div><div class="value">573,522円</div></div>
+      <div class="stat"><div class="label">損益</div><div class="value">+29,351円（+5.39%）</div></div>
     </div>
-    <p class="note">2026年11月27日時点の成績です。運用開始からの推移は、11月25日 +286円（+0.05%）、11月26日 +12,397円（+2.28%）、11月27日 +15,799円（+2.90%）。評価は価格と為替のみ（配当・手数料・税金は含みません）。基準価格は米国株が2026-11-23終値、日本株が2026-11-24終値、基準ドル円は159.524円（11月27日時点のドル円は159.432円）。成績は毎営業日夜に更新していきます。</p>
+    <p class="note">2026年11月28日時点の成績です。運用開始からの推移は、11月25日 +286円（+0.05%）、11月26日 +12,397円（+2.28%）、11月27日 +15,799円（+2.90%）、11月28日 +29,351円（+5.39%）。評価は価格と為替のみ（配当・手数料・税金は含みません）。基準価格は米国株が2026-11-23終値、日本株が2026-11-24終値、基準ドル円は159.524円（今回の評価に使ったドル円は159.281円）。成績は毎営業日夜に更新していきます。</p>
   </section>
 
   <section>
     <h2>保有銘柄（7銘柄）</h2>
     <table>
-      <tr><th>銘柄</th><th>株数</th><th>基準単価</th><th>基準評価額</th><th>構成比</th></tr>
-      <tr><td>ブラデスコ BBD（米国・金融）</td><td>200株</td><td>$2.29</td><td>約73,100円</td><td>約13.4%</td></tr>
-      <tr><td>リオ・ティント RIO（米国・素材）</td><td>6株</td><td>$75.11</td><td>約71,900円</td><td>約13.2%</td></tr>
-      <tr><td>アムコア AMCR（米国・素材）</td><td>10株</td><td>$43.46</td><td>約69,300円</td><td>約12.7%</td></tr>
-      <tr><td>ブリティッシュ・アメリカン・タバコ BTI（米国・生活必需品）</td><td>8株</td><td>$57.29</td><td>約73,100円</td><td>約13.4%</td></tr>
-      <tr><td>エンブリッジ ENB（米国・エネルギー）</td><td>10株</td><td>$45.37</td><td>約72,400円</td><td>約13.3%</td></tr>
-      <tr><td>ティラド 7236（日本・輸送用機器）</td><td>100株</td><td>1,311円</td><td>131,100円</td><td>約24.1%</td></tr>
-      <tr><td>グランディハウス 8999（日本・不動産）</td><td>100株</td><td>533円</td><td>53,300円</td><td>約9.8%</td></tr>
+      <tr><th>銘柄</th><th>株数</th><th>基準単価</th><th>現在単価</th><th>前回比</th><th>現在評価額</th><th>構成比</th></tr>
+      <tr><td>ブラデスコ BBD（米国・金融）</td><td>200株</td><td>$2.29</td><td>$2.80</td><td class="up">+15.23%</td><td>約89,200円</td><td>約15.6%</td></tr>
+      <tr><td>リオ・ティント RIO（米国・素材）</td><td>6株</td><td>$75.11</td><td>$76.47</td><td class="up">+2.53%</td><td>約73,100円</td><td>約12.7%</td></tr>
+      <tr><td>アムコア AMCR（米国・素材）</td><td>10株</td><td>$43.46</td><td>$45.56</td><td class="up">+0.31%</td><td>約72,600円</td><td>約12.7%</td></tr>
+      <tr><td>ブリティッシュ・アメリカン・タバコ BTI（米国・生活必需品）</td><td>8株</td><td>$57.29</td><td>$60.40</td><td class="down">-0.05%</td><td>約77,000円</td><td>約13.4%</td></tr>
+      <tr><td>エンブリッジ ENB（米国・エネルギー）</td><td>10株</td><td>$45.37</td><td>$47.03</td><td class="up">+0.17%</td><td>約74,900円</td><td>約13.1%</td></tr>
+      <tr><td>ティラド 7236（日本・輸送用機器）</td><td>100株</td><td>1,311円</td><td>1,338円</td><td class="up">+2.61%</td><td>133,800円</td><td>約23.3%</td></tr>
+      <tr><td>グランディハウス 8999（日本・不動産）</td><td>100株</td><td>533円</td><td>530円</td><td class="down">-0.56%</td><td>53,000円</td><td>約9.2%</td></tr>
     </table>
-    <p class="note">米国株5銘柄の取得利回りは、現地源泉徴収を差し引いた「実質利回り」で約6.23%（フォワード配当ベース、監査済み）。最大構成はティラドの約24%です。</p>
+    <p class="note">現在単価は2026年11月27日の終値（米国株・日本株とも）。前回比は前営業日の終値との比較で、米国株は11月25日終値比（11月26日は米国の休日）、日本株は11月26日終値比です。現在評価額はドル円159.281円で換算しています。米国株5銘柄の取得利回りは、現地源泉徴収を差し引いた「実質利回り」で約6.23%（フォワード配当ベース、監査済み）。最大構成はティラドの約23%です。</p>
   </section>
 
   <section>
